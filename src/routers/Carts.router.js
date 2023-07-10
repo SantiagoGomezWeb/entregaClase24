@@ -6,12 +6,6 @@ import BaseRouter from './Router.js';
 export default class CartsRouter extends BaseRouter {
     init() {
         // ENDPOINT Auxiliar para corroborar todos los carritos y hacer diferentes pruebas
-        
-        // this.get('/', ['AUTH'], passportCall('jwt', { strategyType: 'jwt' }), async (req, res) => {
-        //     const result = await cartsService.getCarts()
-        //     return res.status(200).send(result)
-        // })
-
         this.get('/usercarts', ['AUTH'], passportCall('jwt', { strategyType: 'jwt' }), async (req, res) => {
             
             try {

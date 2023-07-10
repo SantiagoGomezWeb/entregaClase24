@@ -64,7 +64,6 @@ export default function socketProducts(socketServer) {
         })
 
         socket.on('delete', async data => {
-            // console.log(data)
             await pm.deleteProduct(data)
             const products = await pm.getProducts()
             socket.emit('products', { products })
