@@ -31,4 +31,4 @@ cartSchema.pre('findOne', function (next) {
     next()
 })
 
-export const cartModel = model(cartCollection, cartSchema)
+export const cartModel = model(cartCollection, cartSchema);

@@ -33,4 +33,3 @@ try {
 cartsView.addEventListener('click', () => {
     window.location.href = '/carts'
 });
-
